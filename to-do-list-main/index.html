@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>To do Apps</title>
+</head>
+
+<body>
+    <div class="card">
+        <h2 class="title">To-do list Apps</h2>
+        <div class="profile">
+            <div class="profileName">
+                <h5>Name : Marhadi AKbar</h5>
+                <h5>Position : Front End</h5>
+                <h5 id="current-time"></h5>
+            </div>
+
+        </div>
+        <div class="input">
+
+            <div class="inputTask">
+                <label for="todo-input" class="input-label">Enter Task</label>
+                <input type="text" class="input-field" id="todo-input" placeholder="Add a new todo" />
+            </div>
+
+            <div class="inputTask">
+                <label for="priority-level" class="input-label">Priority</label>
+                <select id="priority-level" class="input-field2">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+            </div>
+            <div class="inputTask">
+                <label for="deadline" class="input-label">Deadline</label>
+                <input type="date" id="deadline" class="input-field" placeholder="Deadline" />
+            </div>
+            <button class="btn" id="add-todo">Add</button>
+        </div>
+
+        <div class="todo">
+            <table id="todo-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Task</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                    </tr>
+                </thead>
+                <tbody id="todo-list"></tbody>
+            </table>
+        </div>
+        <div class="taskDone">
+            <h3>Done</h3>
+            <ul id="done-list"></ul>
+        </div>
+        <div class="TaskOverdue">
+            <h3>Due Date</h3>
+            <ul id="overdue-list"></ul>
+        </div>
+        <button class="btn-remove" id="delete-all">Delete All</button>
+    </div>
+</body>
+
+</html>
